@@ -75,39 +75,39 @@
 
 // OBJECTS
 
-function islegal(user) {       
-    if(age >= 18){
-         console.log(user.name + " allowed to vote");
-    }
-    else{
-         console.log(user.name + " not allowed to vote");
-    }
-}
-var user1 = {
-    name: "anirudh",
-    age: 9,
-    password: "nfjine",
-    // address:{
-    //     city: "chandigarh",
-    // },
-    // metadata: {
-    //     likes: "girls"
-    // }
-}   
-var user2 = {
-    name: "harkirat",
-    age: 29,
-    password: "vjrnjit",
-    // address:{
-    //     city: "jaipur",
-    // },
-    // metadata: {
-    //     likes: "pizza"
-    // }
-}  
+// function islegal(user) {       
+//     if(age >= 18){
+//          console.log(user.name + " allowed to vote");
+//     }
+//     else{
+//          console.log(user.name + " not allowed to vote");
+//     }
+// }
+// var user1 = {
+//     name: "anirudh",
+//     age: 9,
+//     password: "nfjine",
+//     address:{
+//         city: "chandigarh",
+//     },
+//     metadata: {
+//         likes: "girls"
+//     }
+// }   
+// var user2 = {
+//     name: "harkirat",
+//     age: 29,
+//     password: "vjrnjit",
+//     address:{
+//         city: "jaipur",
+//     },
+//     metadata: {
+//         likes: "pizza"
+//     }
+// }  
 
-islegal(user1.name, user1.age);
-islegal(user2.name, user2.age);
+// islegal(user1.name, user1.age);
+// islegal(user2.name, user2.age);
 
 
 
