@@ -102,36 +102,77 @@
 
 // ques: create a function that takes an array of objects as input and returns an array of names of users who are above 18 years old and male
  
-function islegal(users) {
-    if (users.age>=18 && users.gender ==="male") {
-        return users.name;
-    }else{
-        return null;
+// my approach to the question
+// function islegal(users) {
+//     if (users.age>=18 && users.gender ==="male") {
+//         return users.name;
+//     }else{
+//         return null;
+//     }
+// }
+
+// let users = [{
+//     name: "harkirat",
+//     age: 33,
+//     gender: "male"
+// },
+// {
+//     name: "raman",
+//     age: 13,
+//     gender: "male"
+// },
+// {
+//     name: "monica",
+//     age: 20,
+//     gender: "female"
+// },
+// {
+//     name: "zina",
+//     age: 6,
+//     gender: "female"    
+// }]
+
+// for (let i=0; i<users.length; i++){
+//     console.log(islegal(users[i]));
+// }
+
+
+//teachers uproach to the question right approach
+
+function islegal(users){
+    let legalusers = [];
+    
+    for (let i=0; i< users.length; i++){
+        if (
+            users[i].age >=18 && users[i].gender === "male"
+        )
+        legalusers.push(users[i]);
     }
+    return legalusers;
 }
 
-let users = [{
-    name: "harkirat",
-    age: 33,
-    gender: "male"
-},
-{
-    name: "raman",
-    age: 13,
-    gender: "male"
-},
-{
-    name: "monica",
-    age: 20,
-    gender: "female"
-},
-{
-    name: "zina",
-    age: 6,
-    gender: "female"    
-}]
+let users = [
+    {
+        name: "harkirat",
+        age: 33,    
+        gender: "male"
+    },
+    {
+        name: "raman",
+        age: 13,        
+        gender: "male"
+    },
+    {
+        name: "monica",
+        age: 20,
+        gender: "female"
+    },
+    {
+        name: "zina",
+        age: 6,
+        gender: "female"    
+    }
+]
 
-for (let i=0; i<users.length; i++){
-    console.log(islegal(users[i]));
-}
-
+let legalallowedusers = islegal(users);
+console.log(legalallowedusers);
