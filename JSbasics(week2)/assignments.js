@@ -75,3 +75,30 @@ wordCount.banana = countOcc(input, "banana");
 wordCount.orange = countOcc(input, "orange");
 
 console.log(wordCount);
+
+// ques.3 swap keys and values in object
+
+// I/P: { a:"x", b:"y", c:"z"} ; O/P: { x:"a", y:"b", z:"c"}
+
+function swapKeysValues(obj) {
+    let newObj = {};
+
+    let keys = Object.keys(obj);
+
+    for (let i = 0; i < keys.length; i++) {
+
+        let key = keys[i];
+
+        newObj[obj[key]] = key;
+    }
+
+    return newObj;
+}
+
+let input = {
+    a: "x",
+    b: "y",
+    c: "z"
+};
+
+console.log(swapKeysValues(input));
