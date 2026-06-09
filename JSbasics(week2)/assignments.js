@@ -46,3 +46,32 @@ console.log(result);
 // result.bills = findsum(expenses.bills);
 
 // console.log(result);        // assignment 1 completes
+
+// ques.2 Count word occurrences in array , i/p = ["apple", "banana", "apple", "orange", "banana", "apple"]  o/p = { apple: 3, banana: 2, orange: 1 }
+
+
+// Count the word occurrence in array
+function countOcc(arr,word) {
+
+    let occurrence = 0;
+
+    for ( let i = 0; i < arr.length; i++) {
+        if (arr[i] === word){
+            occurrence++;
+        }
+    }
+
+    return occurrence;
+}
+
+let input = 
+       ["apple","banana","apple","orange","banana","apple"];
+
+
+let wordCount = {};
+
+wordCount.apple = countOcc(input, "apple");
+wordCount.banana = countOcc(input, "banana");
+wordCount.orange = countOcc(input, "orange");
+
+console.log(wordCount);
