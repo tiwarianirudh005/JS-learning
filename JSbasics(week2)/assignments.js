@@ -1,27 +1,27 @@
 //ques.1 sum values in object arrays  i/o ={ food: [10, 20, 30], travel: [5, 15], bills: [40, 60] }  o/p =
 
-function findsum(arr){
-    let sum = 0;
+// function findsum(arr){
+//     let sum = 0;
 
-    for (let i=0; i<arr.length; i++) {
-        sum = sum + arr[i];
-    }
-    return sum;
-}
+//     for (let i=0; i<arr.length; i++) {
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
 
-let expenses = {
-    food: [10, 20, 30],
-    travel: [5, 15],
-    bills: [40, 60]
-}
+// let expenses = {
+//     food: [10, 20, 30],
+//     travel: [5, 15],
+//     bills: [40, 60]
+// }
 
-let result = {};
+// let result = {};
 
-result.food = findsum(expenses.food);
-result.travel = findsum(expenses.travel);
-result.bills = findsum(expenses.bills);
+// result.food = findsum(expenses.food);
+// result.travel = findsum(expenses.travel);
+// result.bills = findsum(expenses.bills);
 
-console.log(result);
+// console.log(result);
 
 // now with different data { food: [15, 25, 35], travel: [10, 20], bills: [50, 70] }
 
@@ -51,54 +51,81 @@ console.log(result);
 
 
 // Count the word occurrence in array
-function countOcc(arr,word) {
+// function countOcc(arr,word) {
 
-    let occurrence = 0;
+//     let occurrence = 0;
 
-    for ( let i = 0; i < arr.length; i++) {
-        if (arr[i] === word){
-            occurrence++;
-        }
-    }
+//     for ( let i = 0; i < arr.length; i++) {
+//         if (arr[i] === word){
+//             occurrence++;
+//         }
+//     }
 
-    return occurrence;
-}
+//     return occurrence;
+// }
 
-let input = 
-       ["apple","banana","apple","orange","banana","apple"];
+// let input = 
+//        ["apple","banana","apple","orange","banana","apple"];
 
 
-let wordCount = {};
+// let wordCount = {};
 
-wordCount.apple = countOcc(input, "apple");
-wordCount.banana = countOcc(input, "banana");
-wordCount.orange = countOcc(input, "orange");
+// wordCount.apple = countOcc(input, "apple");
+// wordCount.banana = countOcc(input, "banana");
+// wordCount.orange = countOcc(input, "orange");
 
-console.log(wordCount);
+// console.log(wordCount);
 
-// ques.3 swap keys and values in object
+// // ques.3 swap keys and values in object
 
-// I/P: { a:"x", b:"y", c:"z"} ; O/P: { x:"a", y:"b", z:"c"}
+// // I/P: { a:"x", b:"y", c:"z"} ; O/P: { x:"a", y:"b", z:"c"}
 
-function swapKeysValues(obj) {
-    let newObj = {};
+// function swapKeysValues(obj) {
+//     let newObj = {};
+
+//     let keys = Object.keys(obj);
+
+//     for (let i = 0; i < keys.length; i++) {
+
+//         let key = keys[i];
+
+//         newObj[obj[key]] = key;
+//     }
+
+//     return newObj;
+// }
+
+// let input = {
+//     a: "x",
+//     b: "y",
+//     c: "z"
+// };
+
+// console.log(swapKeysValues(input));
+
+// ques.4 find the largest value key i/o: { a:10, b:50, c:20 }
+
+function findLargestKey(obj) {
 
     let keys = Object.keys(obj);
 
-    for (let i = 0; i < keys.length; i++) {
+    let largestKey = keys[0];
 
-        let key = keys[i];
+    for (let i = 1; i < keys.length; i++) {
 
-        newObj[obj[key]] = key;
+        if (obj[keys[i]] > obj[largestKey]) {
+            largestKey = keys[i];
+        }
+
     }
 
-    return newObj;
+    return largestKey;
 }
 
 let input = {
-    a: "x",
-    b: "y",
-    c: "z"
+    a: 10,
+    b: 50,
+    c: 20
 };
 
-console.log(swapKeysValues(input));
+console.log(findLargestKey(input));
