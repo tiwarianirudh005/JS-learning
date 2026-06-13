@@ -105,27 +105,51 @@
 
 // ques.4 find the largest value key i/o: { a:10, b:50, c:20 }
 
-function findLargestKey(obj) {
+// function findLargestKey(obj) {
 
-    let keys = Object.keys(obj);
+//     let keys = Object.keys(obj);
 
-    let largestKey = keys[0];
+//     let largestKey = keys[0];
 
-    for (let i = 1; i < keys.length; i++) {
+//     for (let i = 1; i < keys.length; i++) {
 
-        if (obj[keys[i]] > obj[largestKey]) {
-            largestKey = keys[i];
-        }
+//         if (obj[keys[i]] > obj[largestKey]) {
+//             largestKey = keys[i];
+//         }
 
-    }
+//     }
 
-    return largestKey;
-}
+//     return largestKey;
+// }
 
-let input = {
-    a: 10,
-    b: 50,
-    c: 20
-};
+// let input = {
+//     a: 10,
+//     b: 50,
+//     c: 20
+// };
 
-console.log(findLargestKey(input));
+// console.log(findLargestKey(input));
+
+//ques5 Flatten object of arrays into one array
+
+// function mergedarr(obj){
+//     let result = [];
+//     let keys = Object.keys(obj);
+
+//     for(let i=0; i< keys.length; i++){
+//         let key = keys[i];
+
+//         for(let j=0; j < obj[key].length; j++){
+//             result.push(obj[key][j]);
+//         }
+//     }
+//     return result;
+// }
+
+// let input = { 
+//     fruits: ["apple", "banana"], 
+//     veggies: ["carrot", "pea"] 
+// }
+
+// console.log(mergedarr(input));
+
