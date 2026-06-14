@@ -153,3 +153,27 @@
 
 // console.log(mergedarr(input));
 
+//ques6. Group people by city - Input: [ { name: "A", city: "Delhi" }, { name: "B", city: "Mumbai" }, { name: "C", city: "Delhi" } ] - Output: { Delhi: ["A", "C"], Mumbai: ["B"] }
+
+function groupbycity(people){
+    let result = {};
+     
+    for(let i=0; i<people.length; i++){
+        let city = people[i].city;
+        let name = people[i].name;
+        if(!result[city]){
+            result[city] = [];
+        }
+        result[city].push(name);
+    }
+    return result;
+}
+
+let people = [
+  { name: "A", city: "Delhi" },
+  { name: "B", city: "Mumbai" },
+  { name: "C", city: "Delhi" }
+
+]
+
+console.log(groupbycity(people));
