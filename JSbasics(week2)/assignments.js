@@ -155,25 +155,51 @@
 
 //ques6. Group people by city - Input: [ { name: "A", city: "Delhi" }, { name: "B", city: "Mumbai" }, { name: "C", city: "Delhi" } ] - Output: { Delhi: ["A", "C"], Mumbai: ["B"] }
 
-function groupbycity(people){
-    let result = {};
+// function groupbycity(people){
+//     let result = [];
      
-    for(let i=0; i<people.length; i++){
-        let city = people[i].city;
-        let name = people[i].name;
-        if(!result[city]){
-            result[city] = [];
-        }
-        result[city].push(name);
-    }
-    return result;
-}
+//     for(let i=0; i<people.length; i++){
+//         let city = people[i].city;
+//         let name = people[i].name;
+//         if(!result[city]){
+//             result[city] = [];
+//         }
+//         result[city].push(name);
+//     }
+//     return result;
+// }
 
-let people = [
-  { name: "A", city: "Delhi" },
-  { name: "B", city: "Mumbai" },
-  { name: "C", city: "Delhi" }
+// let people = [
+//   { name: "A", city: "Delhi" },
+//   { name: "B", city: "Mumbai" },
+//   { name: "C", city: "Delhi" }
 
-]
+// ]
 
-console.log(groupbycity(people));
+// console.log(groupbycity(people));
+
+// ques7.filter object by values > 50  Input: { a: 20, b: 60, c: 40, d: 90 }Output:{ b: 60, d: 90 }
+
+// function filteredvalues(obj) {
+//     let result = {};
+//     let keys = Object.keys(obj);
+
+//     for(let i=0; i<keys.length; i++) {
+//         let key = keys[i]; 
+//         if(obj[key]>50){
+//             result[key] = obj[key];
+//         }
+//     }
+//     return result;
+// }
+
+// let input = {
+//     a: 20,
+//     b: 60,
+//     c: 40,
+//     d: 90
+// };    
+
+// console.log(filteredvalues(input));
+
+//ques8.8. Find student with highest average mark   - Input: { A: [80, 90], B: [70, 75, 85] }    - Output: A

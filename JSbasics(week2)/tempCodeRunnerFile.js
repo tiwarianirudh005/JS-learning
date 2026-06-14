@@ -1,3 +1,6 @@
-for (var i = 0; i < 3; i++) {
-//     isLegal(users[i]);
-// }
+ {
+    a: 20,
+    b: 60,
+    c: 40,
+    d: 90
+}
