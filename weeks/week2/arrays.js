@@ -139,40 +139,40 @@
 
 //teachers uproach to the question right approach
 
-function islegal(users){
-    let legalusers = [];
+// function islegal(users){
+//     let legalusers = [];
     
-    for (let i=0; i< users.length; i++){
-        if (
-            users[i].age >=18 && users[i].gender === "male"
-        )
-        legalusers.push(users[i]);
-    }
-    return legalusers;
-}
+//     for (let i=0; i< users.length; i++){
+//         if (
+//             users[i].age >=18 && users[i].gender === "male"
+//         )
+//         legalusers.push(users[i]);
+//     }
+//     return legalusers;
+// }
 
-let users = [
-    {
-        name: "harkirat",
-        age: 33,    
-        gender: "male"
-    },
-    {
-        name: "raman",
-        age: 13,        
-        gender: "male"
-    },
-    {
-        name: "monica",
-        age: 20,
-        gender: "female"
-    },
-    {
-        name: "zina",
-        age: 6,
-        gender: "female"    
-    }
-]
+// let users = [
+//     {
+//         name: "harkirat",
+//         age: 33,    
+//         gender: "male"
+//     },
+//     {
+//         name: "raman",
+//         age: 13,        
+//         gender: "male"
+//     },
+//     {
+//         name: "monica",
+//         age: 20,
+//         gender: "female"
+//     },
+//     {
+//         name: "zina",
+//         age: 6,
+//         gender: "female"    
+//     }
+// ]
 
-let legalallowedusers = islegal(users);
-console.log(legalallowedusers);
+// let legalallowedusers = islegal(users);
+// console.log(legalallowedusers);
