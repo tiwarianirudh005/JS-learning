@@ -1,3 +1,96 @@
 // maps,filter,arrowfns
 
-function sum(a,b)
+
+//1. Normal Function
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// const ans = sum(1, 2);
+// console.log(ans);
+
+// 2. Arrow Function (Modern Way)
+// const sum = (a, b) => {
+//     return a + b;
+// };
+
+// const ans = sum(1, 2);
+// console.log(ans);
+
+// 3. Express Example
+
+// Traditional function:
+
+// app.get("/", function (req, res) {
+
+// });
+
+// Arrow function:
+
+// app.get("/", (req, res) => {
+
+// });
+
+
+// MAP
+// Problem
+
+// Given an array, create a new array where every value is multiplied by 2.
+
+// Input
+
+// [1, 2, 3, 4, 5]
+
+// Output
+
+// [2, 4, 6, 8, 10]
+
+// Better Way (Using map)
+// Method 1
+// const input = [1, 2, 3, 4, 5];
+
+// function transform(i) {
+//     return i * 2;
+// }
+
+// const ans = input.map(transform);
+
+// console.log(ans);
+
+// // Output:
+// // [2, 4, 6, 8, 10]
+
+// Method 2 (Anonymous Function)
+// const input = [1, 2, 3, 4, 5];
+
+// const ans = input.map(function (i) {
+//     return i * 2;
+// });
+
+// console.log(ans);
+
+// // Output:
+// // [2, 4, 6, 8, 10]
+
+// Method 3 (Arrow Function)
+
+// const input = [1, 2, 3, 4, 5];
+// const ans = input.map((i) => {
+//     return i * 2;
+// });
+// console.log(ans);
+
+// // Output:
+// // [2, 4, 6, 8, 10]
+
+// Or even shorter:
+
+// const input = [1, 2, 3, 4, 5];
+// const ans = input.map(i => i * 2);
+// console.log(ans);
+
+// map() is mainly used for transforming an array.It does not modify the original array.It returns a new array.
+// General syntax:
+// const newArray = array.map((element) => {
+//     return transformedElement;
+// });
