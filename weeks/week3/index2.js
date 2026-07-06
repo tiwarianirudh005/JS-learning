@@ -32,21 +32,11 @@
 // });
 
 
-// MAP
-// Problem
+// MAP -- Problem Given an array, create a new array where every value is multiplied by 2.
+//Input:[1, 2, 3, 4, 5]
+//Output:[2, 4, 6, 8, 10]
 
-// Given an array, create a new array where every value is multiplied by 2.
-
-// Input
-
-// [1, 2, 3, 4, 5]
-
-// Output
-
-// [2, 4, 6, 8, 10]
-
-// Better Way (Using map)
-// Method 1
+//Better Way (Using map) Method 1
 // const input = [1, 2, 3, 4, 5];
 
 // function transform(i) {
@@ -57,10 +47,10 @@
 
 // console.log(ans);
 
-// // Output:
-// // [2, 4, 6, 8, 10]
+// Output:
+// [2, 4, 6, 8, 10]
 
-// Method 2 (Anonymous Function)
+//Method 2 (Anonymous Function)
 // const input = [1, 2, 3, 4, 5];
 
 // const ans = input.map(function (i) {
@@ -69,10 +59,10 @@
 
 // console.log(ans);
 
-// // Output:
-// // [2, 4, 6, 8, 10]
+// Output:
+// [2, 4, 6, 8, 10]
 
-// Method 3 (Arrow Function)
+//Method 3 (Arrow Function)
 
 // const input = [1, 2, 3, 4, 5];
 // const ans = input.map((i) => {
@@ -80,17 +70,37 @@
 // });
 // console.log(ans);
 
-// // Output:
-// // [2, 4, 6, 8, 10]
-
-// Or even shorter:
-
-// const input = [1, 2, 3, 4, 5];
-// const ans = input.map(i => i * 2);
-// console.log(ans);
-
 // map() is mainly used for transforming an array.It does not modify the original array.It returns a new array.
-// General syntax:
+// General syntax
 // const newArray = array.map((element) => {
 //     return transformedElement;
 // });
+
+//filter function logic
+
+//given an input arr give me back the even values
+
+// const arr = [1,2,3,4,5];
+
+// const ans = arr.filter(function (n){  //anonymous functions are used in filter fuctions 
+//     if (n%2 == 0){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// });
+
+// console.log(ans);
+
+//now arrow functions only difference is of the syntax
+
+const arr = [1,2,3,4,5];
+const ans = arr.filter((n) => {  //anonymous functions are used in filter fuctions 
+    if (n%2 == 0){
+        return true;
+    } else{
+        return false;
+    }
+});
+
+console.log(ans);
