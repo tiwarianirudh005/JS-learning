@@ -20,10 +20,3 @@ console.log(user.cities[0]);
 // in javascrript classes are away to define blueprint for creating object (which are different from the object defined earlier).
 // example of classes is the flappy bird game
 
-class rectangle(){
-    constructor(width , height , color ) {
-        this.width = width;
-        this.height = height;
-        this.color = 
-    }
-}
