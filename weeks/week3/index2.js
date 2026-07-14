@@ -94,13 +94,18 @@
 
 //now arrow functions only difference is of the syntax
 
-const arr = [1,2,3,4,5];
-const ans = arr.filter((n) => {  //anonymous functions are used in filter fuctions 
-    if (n%2 == 0){
-        return true;
-    } else{
-        return false;
-    }
-});
+// const arr = [1,2,3,4,5];
+// const ans = arr.filter((n) => {  //anonymous functions are used in filter fuctions 
+//     if (n%2 == 0){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// });
 
-console.log(ans);
+// console.log(ans);
+
+// map ques. -- create a map function that takes 2 input an array and 
+// a transformation callback/function and transforms the array into a 
+// new one using transformation function 
+
