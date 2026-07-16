@@ -42,23 +42,37 @@
 
 /*********flappy bird using classes**********/
 
-// class Rectangle {
-//     constructor (width, height, color) {
-//         this.width = width;
-//         this.height = height;
-//         this.color = color;
-//     }
-//     area () {
-//         return this.width * this.height;
-//     }
-//     perimeter () {
-//         return 2*this.width+this.height;
-//     }
-//     paint () {
-//         console.log("painting with this color" + this.color);
-//     }
-// }
-
+class Rectangle {
+    constructor (width, height, color) {
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+    area () {
+        return this.width * this.height;
+    }
+    perimeter () {
+        return 2*this.width+this.height;
+    }
+    paint () {
+        console.log("painting with this color" + this.color);
+    }
+}
 // ASSIGNMENT CREATE A CIRCLE CLASS
 
-
+class Circle {
+    constructor (radius,color) {
+        this.radius = radius;
+        this.color = color;
+    }
+    area (){
+        return 3.14 * this.radius * this.radius;
+    }
+    perimeter (){
+        return 2 * 3.14 * this.radius;
+    }
+    paint (){
+        console.log("painting with this color" + this.color);
+        
+    }
+}
