@@ -40,30 +40,32 @@
 // console.log(r2.area());
 // console.log(Rectangle.impo());
 
-/*********flappy bird using classes**********/
-
-class Rectangle {
-    constructor (width, height, color) {
-        this.width = width;
-        this.height = height;
+/*********inheritance using classes**********/
+class Shape {
+    constructor(color) {
         this.color = color;
+    }
+     paint () {
+        console.log("painting with this color " + this.color);
+    }
+} 
+class Rectangle extends Shape {
+    constructor (width, height, color) {
+        super(color)
+        this.width = width;
+        this.height = height;   
     }
     area () {
         return this.width * this.height;
     }
     perimeter () {
-        return 2*this.width+this.height;
-    }
-    paint () {
-        console.log("painting with this color" + this.color);
+        return 2 * this.width + this.height;
     }
 }
-// ASSIGNMENT CREATE A CIRCLE CLASS
-
-class Circle {
-    constructor (radius,color) {
+class Circle extends Shape {
+    constructor (radius, color) {
+        super(color)
         this.radius = radius;
-        this.color = color;
     }
     area (){
         return 3.14 * this.radius * this.radius;
@@ -71,8 +73,37 @@ class Circle {
     perimeter (){
         return 2 * 3.14 * this.radius;
     }
-    paint (){
-        console.log("painting with this color" + this.color);
+}
+class Square extends Shape {
+    constructor (side, color){
+        super(color)
+        this.side = side;
         
     }
+    area(){
+        return this.side * this.side;
+    }
+    perimeter(){
+        return 4 * this.side;
+    }
 }
+
+const r1 = new Rectangle (10, 20, "red");
+const c1 = new Circle (40, "grey");
+const s1 = new Square (60, "blue");
+
+console.log(s1.area());
+console.log(s1.perimeter());
+console.log(s1.paint());
+
+console.log(r1.area());
+console.log(r1.perimeter());
+console.log(r1.paint());
+
+console.log(c1.area());
+console.log(c1.perimeter());
+console.log(c1.paint());
+
+
+
+
