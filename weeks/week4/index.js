@@ -41,70 +41,101 @@
 // console.log(Rectangle.impo());
 
 /*********inheritance using classes**********/
-class Shape {
-    constructor(color, depth) {
-        this.color = color;
-        this.depth = depth;
-    }
-     paint () {
-        console.log("painting with this color " + this.color);
-    }
-    volume(){
-        return this.area() * this.depth
+// class Shape {
+//     constructor(color, depth) {
+//         this.color = color;
+//         this.depth = depth;
+//     }
+//      paint () {
+//         console.log("painting with this color " + this.color);
+//     }
+//     volume(){
+//         return this.area() * this.depth
         
-    }
-} 
-class Rectangle extends Shape {
-    constructor (width, height, color, depth) {
-        super(color, depth)
-        this.width = width;
-        this.height = height;   
-    }
-    area () {
-        return this.width * this.height;
-    }
-    perimeter () {
-        return 2 * this.width + this.height;
-    }
-}
-class Circle extends Shape {
-    constructor (radius, color, depth) {
-        super(color, depth)
-        this.radius = radius;
-    }
-    area (){
-        return 3.14 * this.radius * this.radius;
-    }
-    perimeter (){
-        return 2 * 3.14 * this.radius;
-    }
-}
-class Square extends Shape {
-    constructor (side, color, depth){
-        super(color, depth)
-        this.side = side;
+//     }
+// } 
+// class Rectangle extends Shape {
+//     constructor (width, height, color, depth) {
+//         super(color, depth)
+//         this.width = width;
+//         this.height = height;   
+//     }
+//     area () {
+//         return this.width * this.height;
+//     }
+//     perimeter () {
+//         return 2 * this.width + this.height;
+//     }
+// }
+// class Circle extends Shape {
+//     constructor (radius, color, depth) {
+//         super(color, depth)
+//         this.radius = radius;
+//     }
+//     area (){
+//         return 3.14 * this.radius * this.radius;
+//     }
+//     perimeter (){
+//         return 2 * 3.14 * this.radius;
+//     }
+// }
+// class Square extends Shape {
+//     constructor (side, color, depth){
+//         super(color, depth)
+//         this.side = side;
         
-    }
-    area(){
-        return this.side * this.side;
-    }
-    perimeter(){
-        return 4 * this.side;
-    }
+//     }
+//     area(){
+//         return this.side * this.side;
+//     }
+//     perimeter(){
+//         return 4 * this.side;
+//     }
+// }
+
+// const r1 = new Rectangle (10, 20, "red");
+// const c1 = new Circle (40, "grey");
+// const s1 = new Square (60, "blue");
+
+// console.log(s1.area());
+// console.log(s1.perimeter());
+// console.log(s1.paint());
+
+// console.log(r1.area());
+// console.log(r1.perimeter());
+// console.log(r1.paint());
+
+// console.log(c1.area());
+// console.log(c1.perimeter());
+// console.log(c1.paint());
+
+// // DATE CLASS 
+
+// const now= new Date();
+// console.log(now.toISOString);
+
+// //MAP CLASS
+
+// const map = new Map()
+// map.set('name','alice');
+// map.set('age', 30);
+// console.log(map.get('name'));
+
+//settimeout
+function callback(){
+    console.log("hi there");
 }
 
-const r1 = new Rectangle (10, 20, "red");
-const c1 = new Circle (40, "grey");
-const s1 = new Square (60, "blue");
+setTimeout(callback, 5* 1000);
 
-console.log(s1.area());
-console.log(s1.perimeter());
-console.log(s1.paint());
+let ctr = 0;
+for (let i = 0; i< 1000; i++) {
+    ctr = ctr + i ;
+}
+console.log(ctr);
 
-console.log(r1.area());
-console.log(r1.perimeter());
-console.log(r1.paint());
+// PROMISE CLASS *IMP
+ 
 
-console.log(c1.area());
-console.log(c1.perimeter());
-console.log(c1.paint());
+
+
