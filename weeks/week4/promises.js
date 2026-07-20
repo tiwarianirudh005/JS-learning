@@ -70,3 +70,5 @@ let p = fsReadFilePromisified("a.txt","utf-8")
     }
 
 */
+
+//callback hell, promises
