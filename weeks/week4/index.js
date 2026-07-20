@@ -42,16 +42,21 @@
 
 /*********inheritance using classes**********/
 class Shape {
-    constructor(color) {
+    constructor(color, depth) {
         this.color = color;
+        this.depth = depth;
     }
      paint () {
         console.log("painting with this color " + this.color);
     }
+    volume(){
+        return this.area() * this.depth
+        
+    }
 } 
 class Rectangle extends Shape {
-    constructor (width, height, color) {
-        super(color)
+    constructor (width, height, color, depth) {
+        super(color, depth)
         this.width = width;
         this.height = height;   
     }
@@ -63,8 +68,8 @@ class Rectangle extends Shape {
     }
 }
 class Circle extends Shape {
-    constructor (radius, color) {
-        super(color)
+    constructor (radius, color, depth) {
+        super(color, depth)
         this.radius = radius;
     }
     area (){
@@ -75,8 +80,8 @@ class Circle extends Shape {
     }
 }
 class Square extends Shape {
-    constructor (side, color){
-        super(color)
+    constructor (side, color, depth){
+        super(color, depth)
         this.side = side;
         
     }
@@ -103,7 +108,3 @@ console.log(r1.paint());
 console.log(c1.area());
 console.log(c1.perimeter());
 console.log(c1.paint());
-
-
-
-
