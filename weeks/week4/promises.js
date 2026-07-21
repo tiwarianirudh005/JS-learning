@@ -5,28 +5,28 @@
 
 //using a function to return a promise
 
-// function setTimeoutPromisified(ms){
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
+function setTimeoutPromisified(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-// function callback(){
-//     console.log("hi there");
+function callback(){
+    console.log("hi there");
     
-// }
-// setTimeoutPromisified(3000).then(callback) //asynchronous promisified callback
+}
+setTimeoutPromisified(3000).then(callback) //asynchronous promisified callback
 
-// setTimeout(callback,3000); //synchronous
+setTimeout(callback,3000); //synchronous
 
 // //synchronous readfile
-// const fs = require("fs");
-// function callback (err, data){
-//     if(err){
-//         console.log("error while reading the doc.");
-//     }else{
-//         console.log(data); 
-//     }    
-// }
-// fs.readFile("a.txt", "utf-8", callback);
+const fs = require("fs");
+function callback (err, data){
+    if(err){
+        console.log("error while reading the doc.");
+    }else{
+        console.log(data); 
+    }    
+}
+fs.readFile("a.txt", "utf-8", callback);
 
 //asynchronous readfilepromisified
 
