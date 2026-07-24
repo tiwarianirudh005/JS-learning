@@ -1,0 +1,5 @@
+Universal Coding Fact for Success in Tech:
+
+"The best code is not the most complex—it's the most readable, maintainable, and solves the problem efficiently. 
+Always write code as if the person maintaining it is a violent psychopath who knows where you live. 
+Embrace debugging as learning, practice consistent problem-solving, and never stop building."
