@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 
-fs.readFile("a.txt","utf-8",function(err,data){
+fs.readFile("b.txt","utf-8",function(err,data){
     if(err){
         console.log("error while fetching the file");
     }
@@ -10,5 +10,3 @@ fs.readFile("a.txt","utf-8",function(err,data){
         console.log(data);
     }
 })
-
-//learning git locally

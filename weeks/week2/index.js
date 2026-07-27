@@ -12,19 +12,19 @@
 
 //eg three person different greatings
 
-// function greet(name) {
-//     console.log("Hello " + name );
-//     console.log("nameste" + name);
-//     console.log("kiwean singh"+ name);
-// }
+function greet(name) {
+    console.log("Hello " + name );
+    console.log("nameste" + name);
+    console.log("kiwean singh"+ name);
+}
 
-// let name1 = "anirudh";
-// let name2 = "harkirat";
-// let name3 = "sukhman";
+let name1 = "anirudh";
+let name2 = "harkirat";
+let name3 = "sukhman";
 
-// greet(name1);
-// greet(name2);
-// greet(name3);
+greet(name1);
+greet(name2);
+greet(name3);
 
 // another example of age eligibility
 
