@@ -137,5 +137,3 @@ console.log(ctr);
 // PROMISE CLASS *IMP
  
 
-
-

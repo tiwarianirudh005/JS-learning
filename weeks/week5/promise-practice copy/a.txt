@@ -1,0 +1,8 @@
+Becoming a web developer in 4 months is ambitious, but possible with focus and consistency. 
+Start with HTML, CSS, and JavaScript, then learn responsive design, DOM manipulation, and basic Git. 
+Build small projects every week, such as a portfolio site, to-do app, or weather app. 
+After that, learn one framework like React and practice using APIs. 
+Spend time solving coding problems, reading documentation, and improving your projects. 
+Keep applying what you learn by building, testing, and fixing real code. 
+With daily practice, discipline, and a strong portfolio, 
+you can be ready to apply for junior web developer jobs in 4 months.
