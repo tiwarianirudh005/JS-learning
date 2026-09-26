@@ -1,0 +1,1 @@
+JavaScript is a programming language commonly used to create interactive web pages. It can run in web browsers and on servers, allowing developers to build applications, process data, and respond to user actions. Learning JavaScript fundamentals such as variables, functions, arrays, objects, and asynchronous programming provides a strong foundation for web development.
